@@ -1,0 +1,53 @@
+body {
+    background:url("../images/background.jpg");
+}
+
+.jumbotron {
+    opacity:0.7;
+}
+
+.card {
+    opacity:0.9;
+    
+}
+
+img {
+    max-width:100%;
+    
+    opacity:0.8;
+   
+}
+
+img:hover {
+    opacity: 1.0;
+   
+}
+
+h1 {
+    color:#841996;
+    opacity:1;
+}
+
+h3, h4, h5 {
+    font-family: 'Acme', sans-serif;
+}
+
+ul, #wins, #losses, #random, #total-score {
+    font-family: 'PT Serif', serif;
+}
+
+ @media only screen and (max-width:767px) {
+     img {
+         margin-top:30px;
+         max-width:100%;
+     }
+
+     
+ }
+
+ /* @media only screen and (max-width:575px) {
+ 
+    #win-card, #loss-card {
+    max-width:40%;
+    }
+}    */

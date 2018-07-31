@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Crystal Collector</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+   
+    
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid text-center rounded">
+            <h1 class="display-3" style="font-family: 'Acme', sans-serif;">
+                Crystal Collector
+            </h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6"> <!--left column-->
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <h3 class="card-title text-center pt-2">Instructions</h3>
+                            <hr class="mt-1">
+                            <ul class="card-text pb-3">
+                                <li>At the start of each game, you will be given a target number.</li>                 
+                                <li>You must add your total points to reach the target number by selecting the crystals.</li>
+                                <li>Each crystal is worth a different amount that is randomly assigned before each new game.</li>
+                                <li>Your goal is to reach exactly the target number by clicking on a combination of crystals.</li>
+                                <li>If you go over the target number, you lose.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <div class="card pb-2" id="win-card">
+                            <h5 class="card-title text-center mt-2">Wins</h5>
+                            <hr class="my-1">
+                            <div class="card-text text-center" id="wins">0</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-6">
+                        <div class="card pb-2" id="loss-card">
+                            <h5 class="card-title text-center mt-2">Losses</h5>
+                            <hr class="my-1">
+                            <div class="card-text text-center" id="losses">0</div>
+                        </div>
+                    </div>                            
+                </div>
+            </div>
+            
+            <div class="col-md-6"> <!--right column-->
+                
+                <div class="row mb-4">
+                    <div class="col-xs-3 col-sm-3 col-md-3 px-2">
+                        <img src="assets/images/purple.jpg" id="purple-crystal" class="img-responsive border-light rounded">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 px-2">
+                        <img src="assets/images/blue.jpg" id="blue-crystal" class="img-responsive border-light rounded">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 px-2">
+                        <img src="assets/images/orange.jpg" id="orange-crystal" class="img-responsive border-light rounded">
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 px-2">
+                        <img src="assets/images/green.jpg" id="green-crystal" class="img-responsive border-light rounded">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 mt-3">
+                        <div class="card pb-2">
+                            <h4 class="card-title text-center mt-2">Target</h4>
+                            <hr class="mt-1">
+                            <div class="card-text text-center number py-5" style="font-size:36px" id="random"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 mt-3">
+                        <div class="card pb-2">
+                            <h4 class="card-title text-center mt-2">Score</h4>
+                            <hr class="mt-1">
+                            <div class="card-text text-center number py-5" style="font-size:36px" id="total-score">0</div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
