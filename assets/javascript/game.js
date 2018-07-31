@@ -56,8 +56,6 @@ function resetGame() {
 }
 
 
-
-
 //PROCESS ==================================================================
 
 //Determine random number
